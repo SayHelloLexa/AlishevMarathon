@@ -11,8 +11,8 @@ public class Task2 {
         Player player6 = new Player(random.nextInt(100 - 90) + 90);
 
         Player.info();
-        while (player1.stamina > 0) {
-            player1.run();
+        while (player1.stamina > 0){
+        player1.run();
         }
         Player.getCountPlayers();
         Player.info();

@@ -30,8 +30,14 @@ class Player {
     }
 
     public static void info() {
+        int difference = 6 - countPlayers;
         if (countPlayers < 6) {
-            System.out.println("Команды неполные. На поле есть еще " + (6 - countPlayers) + " свободных мест.");
+            if (difference == 1){
+                System.out.println("Команды неполные. На поле есть еще " + difference + " свободное место.");
+            }
+            if (difference == 2 || difference == 3 || difference == 4){
+                System.out.println("Команды неполные. На поле есть еще " + difference + " свободных места.");
+            }
         } else System.out.println("На поле нет свободных мест.");
     }
 
